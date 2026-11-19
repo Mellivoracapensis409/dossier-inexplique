@@ -1267,7 +1267,7 @@ function choose(index) {
   const box = label.querySelector('.option-line').getBoundingClientRect();
   const x = box.left + 34, y = box.top + box.height / 2;
   Sound.play('pin');
-  setTimeout(() => Sound.play(key), 60);
+    if (key !== 'network') setTimeout(() => Sound.play(key), 60);
   FX.burst(key, x, y, key === 'network' ? pinCenter(current) : null);
   if (key === 'all') { shake(); flash(); }
 }
