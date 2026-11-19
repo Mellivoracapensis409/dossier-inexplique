@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<head>
+<head>tech() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#151913">
@@ -760,11 +760,11 @@ const Sound = (() => {
   }
 
   const sfx = {
-    tech() {
-      tone(1180, { type: 'square', dur: 0.07, vol: 0.06 });
-      tone(1760, { type: 'square', dur: 0.07, vol: 0.05, delay: 0.08 });
-      tone(880, { type: 'square', dur: 0.1, vol: 0.05, delay: 0.17, slide: 440 });
-      noise({ dur: 0.14, type: 'highpass', f: 4200, vol: 0.05, delay: 0.02 });
+  tech() {
+      tone(1180, { type: 'square', dur: 0.07, vol: 0.005 });
+      tone(1760, { type: 'square', dur: 0.07, vol: 0.005, delay: 0.08 });
+      tone(880, { type: 'square', dur: 0.1, vol: 0.005, delay: 0.17, slide: 440 });
+      noise({ dur: 0.14, type: 'highpass', f: 4200, vol: 0.005, delay: 0.02 });
     },
     archives() {
       noise({ dur: 0.34, type: 'bandpass', f: 1400, f2: 5200, q: 0.8, vol: 0.2, wet: 0.1 });
