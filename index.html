@@ -1478,7 +1478,7 @@ async function playResult(res) {
     Sound.tension(Math.min(1, 0.3 + step * 0.14));
     items.forEach(entry => reveal(entry.index, key, !skip));
     if (key !== 'pass') {
-     if (!skip) Sound.strum(0.02, step);
+    // if (!skip) Sound.strum(0.02, step);
       for (let i = 0; i < items.length - 1; i++) threadAt(items[i].index, items[i + 1].index, key, !skip);
       if (key === 'all' && !skip) { shake(); flash(); Sound.play('all'); }
     }
